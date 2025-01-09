@@ -282,6 +282,8 @@ const default_config = {
 
 const CONFIG = new Config(default_config, palette);
 
+console.log("CONFIG object:", CONFIG);
+
 const root = document.querySelector(":root");
 root.style.setProperty("--bg", palette.mantle);
 root.style.setProperty("--accent", palette.green);

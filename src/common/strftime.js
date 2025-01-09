@@ -14,7 +14,9 @@ new Date().strftime("do B Y", "Asia/Tokyo")           => 18th January 2018
 */
 
 Date.prototype.strftime = function (format = "c", timeZone = "UTC") {
-  const date = this;
+  const date = new Date(
+    this.toLocaleString("en-US", { timeZone }) // Convert the date to the correct time zone
+  );
 
   const isValid = (date) => date instanceof Date && !isNaN(date);
 
@@ -61,21 +63,20 @@ Date.prototype.strftime = function (format = "c", timeZone = "UTC") {
       B: month[date.getMonth()],
       m: date.getMonth() + 1,
       N: (date.getMonth() + 1).pad(),
-      y: date.getFullYear().pad(),
+      y: date.getFullYear().toString().slice(-2), // Corrected short year
       Y: date.getFullYear(),
-      H: date.getHours(),
-      h: date.getHours().pad(),
+      H: date.getHours().pad(),
+      h: date.getHours(),
       p: date.getHours() >= 12 ? "PM" : "AM",
       o: date.getDate().ord(),
-      M: date.getMinutes(),
-      i: date.getMinutes().pad(),
-      S: date.getSeconds(),
-      s: date.getSeconds().pad(),
+      M: date.getMinutes().pad(),
+      i: date.getMinutes(),
+      S: date.getSeconds().pad(),
+      s: date.getSeconds(),
       f: date.getMilliseconds(),
       c: date.toDateString() + " - " + date.toTimeString(),
       x: date.toLocaleDateString(),
       X: date.toLocaleTimeString(),
-      // Add the time zone offset (e.g., UTC, GMT)
       T: new Intl.DateTimeFormat('en-US', { timeZoneName: 'short', timeZone }).format(date).split(' ')[2], // Timezone abbreviation
       Z: new Intl.DateTimeFormat('en-US', { timeZoneName: 'long', timeZone }).format(date).split(' ')[2], // Full timezone name
     };
@@ -86,10 +87,4 @@ Date.prototype.strftime = function (format = "c", timeZone = "UTC") {
 
   return result.join("");
 };
-
-// Example usage:
-const date1 = new Date();
-console.log(date1.strftime("Y-m-d H:i:S T", "America/New_York"));  // New York time zone
-console.log(date1.strftime("Y-m-d H:i:S Z", "Europe/London"));      // London time zone
-console.log(date1.strftime("Y-m-d H:i:S Z", "Asia/Tokyo"));        // Tokyo time zone
 

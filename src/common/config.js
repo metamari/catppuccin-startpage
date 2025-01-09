@@ -2,12 +2,13 @@ class Config {
   defaults = {
     overrideStorage: false,
     temperature: {
-      location: "London",
+      location: "Sucre, Bolivia",
       scale: "C",
     },
     clock: {
       format: "h:i p",
     },
+    timeZone: "America/Los_Angeles",
     disabled: [],
     openLastVisitedTab: false,
     tabs: [],
@@ -29,6 +30,7 @@ class Config {
       __proto__: this.__proto__,
       set: (target, prop, value) => this.settingUpdatedCallback(target, prop, value),
     });
+    
   }
 
   /**
