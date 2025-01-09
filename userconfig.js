@@ -3,6 +3,7 @@ const palette = mocha;
 
 const default_config = {
   overrideStorage: true,
+  localIcons: true,
   temperature: {
     location: "Sucre, Bolivia",
     scale: "C",
