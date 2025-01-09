@@ -11,6 +11,7 @@ const default_config = {
     format: "h:i p",
     iconColor: palette.maroon,
   },
+  timeZone: "America/La_Paz",
   disabled: [],
   fastlink: "https://app.raindrop.io",
   openLastVisitedTab: true,

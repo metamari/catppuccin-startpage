@@ -6,6 +6,8 @@ class Clock extends Component {
 
   constructor() {
     super();
+    // Add a default time zone property
+    this.timeZone = CONFIG.timeZone || "UTC"; // Use UTC if no timeZone is set in the config
   }
 
   imports() {
@@ -14,24 +16,24 @@ class Clock extends Component {
 
   style() {
     return `
-        .clock-time {
-            white-space: nowrap;
-            font: 300 9pt 'Roboto', sans-serif;
-            color: ${CONFIG.palette.text};
-            letter-spacing: .5px;
-        }
+      .clock-time {
+        white-space: nowrap;
+        font: 300 9pt 'Roboto', sans-serif;
+        color: ${CONFIG.palette.text};
+        letter-spacing: .5px;
+      }
 
-        .clock-icon {
-            font-size: 10pt;
-            margin-right: 10px;
-        }
+      .clock-icon {
+        font-size: 10pt;
+        margin-right: 10px;
+      }
     `;
   }
 
   template() {
     return `
-        <span class="material-icons clock-icon">schedule</span>
-        <p class="clock-time"></p>
+      <span class="material-icons clock-icon">schedule</span>
+      <p class="clock-time"></p>
     `;
   }
 
@@ -41,7 +43,8 @@ class Clock extends Component {
 
   setTime() {
     const date = new Date();
-    this.refs.clock = date.strftime(CONFIG.clock.format);
+    // Pass the timeZone to strftime to format according to the selected time zone
+    this.refs.clock = date.strftime(CONFIG.clock.format, this.timeZone);
   }
 
   connectedCallback() {

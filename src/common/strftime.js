@@ -8,12 +8,12 @@ silly strftime function implementation in js without the percentage notation.
 based off https://strftime.org
 
 USAGE:
-new Date().strftime("H:M p - A") => 21:32 AM - Thursday
-new Date().strftime("m/b/Y")     => 1/Jan/2018
-new Date().strftime("do B Y")    => 18th January 2018
+new Date().strftime("H:M p - A", "America/New_York") => 21:32 AM - Thursday
+new Date().strftime("m/b/Y", "Europe/London")         => 1/Jan/2018
+new Date().strftime("do B Y", "Asia/Tokyo")           => 18th January 2018
 */
 
-Date.prototype.strftime = function (format = "c") {
+Date.prototype.strftime = function (format = "c", timeZone = "UTC") {
   const date = this;
 
   const isValid = (date) => date instanceof Date && !isNaN(date);
@@ -75,6 +75,9 @@ Date.prototype.strftime = function (format = "c") {
       c: date.toDateString() + " - " + date.toTimeString(),
       x: date.toLocaleDateString(),
       X: date.toLocaleTimeString(),
+      // Add the time zone offset (e.g., UTC, GMT)
+      T: new Intl.DateTimeFormat('en-US', { timeZoneName: 'short', timeZone }).format(date).split(' ')[2], // Timezone abbreviation
+      Z: new Intl.DateTimeFormat('en-US', { timeZoneName: 'long', timeZone }).format(date).split(' ')[2], // Full timezone name
     };
 
   format.split(/(\w|.)/m).forEach((type) => {
@@ -83,3 +86,10 @@ Date.prototype.strftime = function (format = "c") {
 
   return result.join("");
 };
+
+// Example usage:
+const date1 = new Date();
+console.log(date1.strftime("Y-m-d H:i:S T", "America/New_York"));  // New York time zone
+console.log(date1.strftime("Y-m-d H:i:S Z", "Europe/London"));      // London time zone
+console.log(date1.strftime("Y-m-d H:i:S Z", "Asia/Tokyo"));        // Tokyo time zone
+
