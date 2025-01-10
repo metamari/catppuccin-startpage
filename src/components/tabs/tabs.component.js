@@ -173,7 +173,7 @@ class Tabs extends Component {
           width: 70%;
           height: 100%;
           background: ${CONFIG.palette.base};
-          padding: 5%;
+          padding: 1.5%;
           flex-wrap: wrap;
       }
 
@@ -235,15 +235,15 @@ class Tabs extends Component {
 
       .categories .links li:not(:last-child) {
           box-shadow: 0 1px 0 ${CONFIG.palette.text};
-          padding: 0 0 .5em 0;
-          margin-bottom: 1.5em;
+          padding: 0 0 0 0;
+          margin-bottom: .9em;
       }
 
       .categories .links li h1 {
           color: ${CONFIG.palette.text};
         opacity: 0.5;
           font-size: 13px;
-          margin-bottom: 1em;
+          margin-bottom: .9em;
           font-weight: 600;
           letter-spacing: 1px;
           text-transform: uppercase;
