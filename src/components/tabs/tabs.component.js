@@ -222,15 +222,15 @@ class Tabs extends Component {
           left: calc(15% - 42.5px);
           bottom: 0;
           top: 0;
-          background: linear-gradient(to top, rgb(50 48 47 / 90%), transparent);
+          background: linear-gradient(to top, rgba(50, 48, 47, 0.9), rgba(50, 48, 47, 0.2));
           color: var(--flavour);
           letter-spacing: 1px;
           font: 500 30px 'Nunito', sans-serif;
           text-align: center;
           flex-wrap: wrap;
           word-break: break-all;
-          align-items: center;
-          backdrop-filter: blur(3px);
+          align-items: center;          
+          backdrop-filter: blur(1px);
       }
 
       .categories .links li:not(:last-child) {

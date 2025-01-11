@@ -19,7 +19,7 @@ const default_config = {
   tabs: [
     {
       name: "a - c",
-      background_url: "src/img/banners/cbg-4.gif",
+      background_url: "src/img/banners/bg-1.png",
       categories: [
         {
           name: "anime",
@@ -28,49 +28,49 @@ const default_config = {
               name: "AMQ",
               url: "https://animemusicquiz.com/",
               icon: "music-question",
-              icon_color: palette.green
+              icon_color: palette.red
             },
             {
               name: "AniChart",
               url: "https://anichart.net/",
               icon: "calendar-event",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "AniDB",
               url: "https://anidb.net/",
               icon: "database",
-              icon_color: palette.green
+              icon_color: palette.yellow
             },
             {
               name: "AnimeBytes",
               url: "https://animebytes.tv/",
               icon: "progress",
-              icon_color: palette.green
+              icon_color: palette.red
             },
             {
               name: "AniList",
               url: "https://anilist.co/home",
               icon: "list",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Crunchyroll",
               url: "http://www.crunchyroll.com/",
               icon: "movie",
-              icon_color: palette.green
+              icon_color: palette.peach
             },
             {
               name: "MyAnimeList",
               url: "https://myanimelist.net/",
               icon: "book",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Nyaa",
               url: "https://nyaa.si/",
               icon: "download",
-              icon_color: palette.green
+              icon_color: palette.sky
             }
           ]
         },
@@ -81,13 +81,13 @@ const default_config = {
               name: "Danbooru",
               url: "http://danbooru.donmai.us/",
               icon: "photo-square-rounded",
-              icon_color: palette.green
+              icon_color: palette.peach
             },
             {
               name: "Gelbooru",
               url: "https://gelbooru.com/",
               icon: "photo",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Imgur",
@@ -99,31 +99,31 @@ const default_config = {
               name: "Pixiv",
               url: "https://www.pixiv.net/",
               icon: "brush",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
-              name: "Fanbox",
+              name: "pixivFANBOX",
               url: "https://www.fanbox.cc/",
               icon: "box",
-              icon_color: palette.green
+              icon_color: palette.yellow
             },
             {
               name: "Sakugabooru",
               url: "https://sakugabooru.com/",
               icon: "bounce-right",
-              icon_color: palette.green
+              icon_color: palette.red
             },
             {
               name: "Yande.re",
               url: "https://yande.re/post",
               icon: "photo-pentagon",
-              icon_color: palette.green
+              icon_color: palette.pink
             },
             {
               name: "Zerochan",
               url: "https://www.zerochan.net/",
               icon: "photo-hexagon",
-              icon_color: palette.green
+              icon_color: palette.peach
             }
           ]
         },
@@ -134,25 +134,25 @@ const default_config = {
               name: "E-Campus",
               url: "https://ecampus.usfx.bo/my/",
               icon: "school",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "GitHub",
               url: "https://github.com/",
               icon: "code",
-              icon_color: palette.green
+              icon_color: palette.overlay2
             },
             {
               name: "GitLab",
               url: "https://gitlab.com/",
               icon: "terminal",
-              icon_color: palette.green
+              icon_color: palette.peach
             },
             {
               name: "Kaggle",
               url: "https://www.kaggle.com/",
               icon: "chart-line",
-              icon_color: palette.green
+              icon_color: palette.sky
             },
             {
               name: "Spring Initializr",
@@ -164,7 +164,7 @@ const default_config = {
               name: "Suniver",
               url: "https://si2.usfx.bo/suniver/web/",
               icon: "clipboard-list",
-              icon_color: palette.green
+              icon_color: palette.peach
             }
           ]
         }
@@ -172,7 +172,7 @@ const default_config = {
     },
     {
       name: "d - s",
-      background_url: "src/img/banners/cbg-4.gif",
+      background_url: "src/img/banners/bg-2.png",
       categories: [
         {
           name: "dictionaries",
@@ -181,49 +181,49 @@ const default_config = {
               name: "Cambridge Dictionary",
               url: "https://dictionary.cambridge.org/",
               icon: "book-2",
-              icon_color: palette.green
+              icon_color: palette.peach
             },
             {
               name: "Cube Pronunciation Dictionary",
               url: "https://www.cubedictionary.org/",
               icon: "speakerphone",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Diccionario de americanismos",
               url: "https://www.asale.org/damer/",
               icon: "globe",
-              icon_color: palette.green
+              icon_color: palette.maroon
             },
             {
               name: "Diccionario panhispánico de dudas",
               url: "https://www.rae.es/dpd/",
               icon: "help-circle",
-              icon_color: palette.green
+              icon_color: palette.text
             },
             {
               name: "Dictionary.com",
               url: "https://www.dictionary.com/",
               icon: "text-recognition",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Diccionario de la lengua española",
               url: "https://dle.rae.es/?w=diccionario",
               icon: "book",
-              icon_color: palette.green
+              icon_color: palette.yellow
             },
             {
               name: "Merriam-Webster Dictionary",
               url: "https://www.merriam-webster.com/",
               icon: "vocabulary",
-              icon_color: palette.green
+              icon_color: palette.text
             },
             {
               name: "Wordnik",
               url: "https://www.wordnik.com/",
               icon: "align-left",
-              icon_color: palette.green
+              icon_color: palette.peach
             }
           ]
         },
@@ -234,7 +234,7 @@ const default_config = {
               name: "AnimeThemes",
               url: "https://animethemes.moe/",
               icon: "microphone-2",
-              icon_color: palette.green
+              icon_color: palette.overlay2
             },
             {
               name: "AniPlaylist",
@@ -246,13 +246,13 @@ const default_config = {
               name: "JPopsuki",
               url: "https://jpopsuki.eu/index.php",
               icon: "music-down",
-              icon_color: palette.green
+              icon_color: palette.sky
             },
             {
               name: "Last.fm",
               url: "https://www.last.fm/",
               icon: "radio",
-              icon_color: palette.green
+              icon_color: palette.red
             },
             {
               name: "Spotify",
@@ -269,13 +269,13 @@ const default_config = {
               name: "Bluesky",
               url: "https://bsky.app/",
               icon: "butterfly",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Twitter",
               url: "https://x.com/",
               icon: "feather",
-              icon_color: palette.green
+              icon_color: palette.sky
             }
           ]
         }
@@ -283,7 +283,7 @@ const default_config = {
     },
     {
       name: "s - z",
-      background_url: "src/img/banners/cbg-4.gif",
+      background_url: "src/img/banners/bg-3.png",
       categories: [
         {
           name: "translators",
@@ -292,13 +292,13 @@ const default_config = {
               name: "DeepL Translate",
               url: "https://www.deepl.com/translator",
               icon: "language-hiragana",
-              icon_color: palette.green
+              icon_color: palette.overlay2
             },
             {
               name: "Google Translate",
               url: "https://translate.google.com/",
               icon: "language-katakana",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Lingva Translate",
@@ -315,43 +315,43 @@ const default_config = {
               name: "Backloggd",
               url: "https://www.backloggd.com/",
               icon: "list",
-              icon_color: palette.green
+              icon_color: palette.overlay2
             },
             {
               name: "GOG",
               url: "https://www.gog.com/",
               icon: "disc",
-              icon_color: palette.green
+              icon_color: palette.yellow
             },
             {
               name: "Humble Bundle",
               url: "https://www.humblebundle.com/",
               icon: "gift",
-              icon_color: palette.green
+              icon_color: palette.red
             },
             {
               name: "itch.io",
               url: "https://itch.io/",
               icon: "file",
-              icon_color: palette.green
+              icon_color: palette.maroon
             },
             {
               name: "PlayStation Network",
               url: "https://www.playstation.com/en-us/playstation-network/",
               icon: "device-gamepad-2",
-              icon_color: palette.green
+              icon_color: palette.blue
             },
             {
               name: "Steam",
               url: "https://steamcommunity.com/",
               icon: "steam",
-              icon_color: palette.green
+              icon_color: palette.overlay2
             },
             {
               name: "Vimm's Lair",
               url: "https://vimm.net/",
               icon: "device-gamepad",
-              icon_color: palette.green
+              icon_color: palette.red
             }
           ]
         },
@@ -362,13 +362,13 @@ const default_config = {
               name: "Twitch",
               url: "https://www.twitch.tv/",
               icon: "device-computer-camera",
-              icon_color: palette.green
+              icon_color: palette.mauve
             },
             {
               name: "Youtube",
               url: "https://www.youtube.com/feed/subscriptions",
               icon: "player-play",
-              icon_color: palette.green
+              icon_color: palette.red
             }
           ]
         }
