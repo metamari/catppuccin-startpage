@@ -5,7 +5,7 @@ class Statusbar extends Component {
     categories: ".categories ul",
     tabs: "#tabs ul li",
     indicator: ".indicator",
-    fastlink: ".fastlink",
+    fastlink: ".fastlink"
   };
 
   currentTabIndex = 0;
@@ -18,7 +18,7 @@ class Statusbar extends Component {
 
   setDependencies() {
     this.externalRefs = {
-      categories: this.parentNode.querySelectorAll(this.refs.categories),
+      categories: this.parentNode.querySelectorAll(this.refs.categories)
     };
   }
 
@@ -235,7 +235,7 @@ class Statusbar extends Component {
     this.activateByKey(Number(tab.getAttribute("tab-index")));
   }
 
-  handleWheelScroll(event) {
+  /*handleWheelScroll(event) {
     if (!event) return;
 
     let { target, wheelDelta } = event;
@@ -253,6 +253,31 @@ class Statusbar extends Component {
       this.activateByKey((activeTab + 1) % (this.refs.tabs.length - 1));
     } else {
       this.activateByKey(activeTab - 1 < 0 ? this.refs.tabs.length - 2 : activeTab - 1);
+    }
+  }*/
+
+  handleWheelScroll(event) {
+    if (!event) return;
+
+    let { target } = event;
+    let wheelDelta = -event.deltaY; // Use deltaY and reverse for compatibility
+
+    if (target.shadow && target.shadow.activeElement) return;
+
+    let activeTab = -1;
+    this.refs.tabs.forEach((tab, index) => {
+      if (tab.getAttribute("active") === "") {
+        activeTab = index;
+      }
+    });
+
+    // Reverse the action for scroll up and scroll down
+    if (wheelDelta > 0) {
+      // Previously scrolling up moved to the next tab, now move to the previous tab
+      this.activateByKey(activeTab - 1 < 0 ? this.refs.tabs.length - 2 : activeTab - 1);
+    } else {
+      // Previously scrolling down moved to the previous tab, now move to the next tab
+      this.activateByKey((activeTab + 1) % (this.refs.tabs.length - 1));
     }
   }
 
