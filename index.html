@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="AllJavi (https://github.com/AllJavi)" />
+    <link rel="preload" href="src/fonts/tabler-icons.ttf?v2.33.0" as="font" type="font/ttf" crossorigin="anonymous" />
+    <link href="src/css/tabler-icons.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="src/css/awoo.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700|Raleway:600" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/gh/monzanifabio/cryptofont/cryptofont.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
     <link href="src/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="src/css/tabler-icons.min.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/favicon.png" />
     <title>~/.config</title>
   </head>
@@ -36,5 +37,12 @@
     <script type="text/javascript" src="src/components/statusbar/statusbar.component.js"></script>
 
     <script type="text/javascript" src="src/common/module.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(() => {
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
   </body>
 </html>
