@@ -262,7 +262,7 @@ class Statusbar extends Component {
     let { target } = event;
     let wheelDelta = -event.deltaY; // Use deltaY and reverse for compatibility
 
-    if (target.shadow && target.shadow.activeElement) return;
+    if (target.shadow?.activeElement) return;
 
     let activeTab = -1;
     this.refs.tabs.forEach((tab, index) => {
@@ -286,7 +286,7 @@ class Statusbar extends Component {
 
     let { target, key } = event;
 
-    if (target.shadow && target.shadow.activeElement) return;
+    if (target.shadow?.activeElement) return;
 
     if (Number.isInteger(parseInt(key)) && key <= this.externalRefs.categories.length) {
       this.activateByKey(key - 1);

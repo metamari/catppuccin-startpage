@@ -25,9 +25,7 @@ class Config {
     this.setKeybindings();
     this.save();
 
-    return new Proxy(this, {
-      ...this,
-      __proto__: this.__proto__,
+    this.proxy = new Proxy(this, {
       set: (target, prop, value) => this.settingUpdatedCallback(target, prop, value),
     });
     
@@ -85,7 +83,7 @@ class Config {
    * @returns {void}
    */
   setKeybindings() {
-    document.onkeypress = ({ key }) => {
+    document.onkeydown = ({ key }) => {
       if (document.activeElement !== document.body) return;
 
       if (Object.keys(this.config.keybindings).includes(key)) Actions.activate(this.config.keybindings[key]);

@@ -43,9 +43,10 @@ class Clock extends Component {
   }
 
   setTime() {
-  const date = new Date();
-  this.refs.clock = date.strftime(CONFIG.clock.format, this.timeZone); // Pass the timeZone from the CONFIG object
+    const date = new Date();
+    this.refs.clock = strftime(date, CONFIG.clock.format, this.timeZone); // Use the standalone strftime function
   }
+  
 
   connectedCallback() {
     this.render().then(() => {

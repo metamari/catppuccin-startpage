@@ -1,8 +1,4 @@
 class Links extends Component {
-  constructor() {
-    super();
-  }
-
   static getIcon(link) {
     const defaultColor = CONFIG.palette.base;
 
@@ -42,10 +38,6 @@ class Links extends Component {
 }
 
 class Category extends Component {
-  constructor() {
-    super();
-  }
-
   static getBackgroundStyle(url) {
     return `style="background-image: url(${url}); background-repeat: no-repeat;background-size: contain;"`;
   }
