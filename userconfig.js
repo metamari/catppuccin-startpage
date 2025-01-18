@@ -376,7 +376,7 @@ const default_config = {
     },
     {
       name: "Mi sc.",
-      background_url: "src/img/banners/bg-3.png",
+      background_url: "src/img/banners/bg-4.png",
       categories: [
         {
           name: "Others",

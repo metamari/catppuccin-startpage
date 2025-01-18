@@ -66,7 +66,7 @@ function strftime(date, format = "c", timeZone = "UTC") {
     p: dateObj.getHours() >= 12 ? "PM" : "AM",
     o: ordinalNumber(dateObj.getDate()),
     M: padNumber(dateObj.getMinutes()), // Use padNumber for minutes
-    i: dateObj.getMinutes(),
+    i: padNumber(dateObj.getMinutes()), // Use padNumber for minutes (same as M)
     S: padNumber(dateObj.getSeconds()), // Use padNumber for seconds
     s: dateObj.getSeconds(),
     f: dateObj.getMilliseconds(),
@@ -76,6 +76,7 @@ function strftime(date, format = "c", timeZone = "UTC") {
     T: new Intl.DateTimeFormat('en-US', { timeZoneName: 'short', timeZone }).format(dateObj).split(' ')[2], // Timezone abbreviation
     Z: new Intl.DateTimeFormat('en-US', { timeZoneName: 'long', timeZone }).format(dateObj).split(' ')[2], // Full timezone name
   };
+  
 
   // Split format and apply the relevant formatting for each token
   format.split(/(\w|.)/m).forEach((type) => {
@@ -84,4 +85,3 @@ function strftime(date, format = "c", timeZone = "UTC") {
 
   return result.join("");
 }
-
