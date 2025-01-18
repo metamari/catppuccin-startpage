@@ -2,7 +2,7 @@
   font-family: "tabler-icons";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/tabler-icons.woff2?v2.33.0") format("woff2");
+  src: url("../fonts/tabler-icons.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -203,4 +203,44 @@
 
 .ti-vocabulary:before {
   content: "\ef1e";
+}
+
+.ti-message:before {
+  content: "\eaef";
+}
+
+.ti-world:before {
+  content: "\eb54";
+}
+
+.ti-brain:before {
+  content: "\f59f";
+}
+
+.ti-user-circle:before {
+  content: "\ef68";
+}
+
+.ti-cloud:before {
+  content: "\ea76";
+}
+
+.ti-droplet:before {
+  content: "\ea97";
+}
+
+.ti-device-desktop:before {
+  content: "\ea89";
+}
+
+.ti-library-photo:before {
+  content: "\fd4a";
+}
+
+.ti-ear:before {
+  content: "\ebce";
+}
+
+.ti-tags:before {
+  content: "\ef86";
 }

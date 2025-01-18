@@ -373,6 +373,101 @@ const default_config = {
           ]
         }
       ]
+    },
+    {
+      name: "Mi sc.",
+      background_url: "src/img/banners/bg-3.png",
+      categories: [
+        {
+          name: "Others",
+          links: [
+            {
+              name: "1337x.to",
+              url: "https://www.1337x.to/",
+              icon: "download",
+              icon_color: palette.red
+            },
+            {
+              name: "ChatGPT",
+              url: "https://chat.openai.com/",
+              icon: "message",
+              icon_color: palette.overlay2
+            },
+            {
+              name: "Chromium",
+              url: "https://chromium.woolyss.com/",
+              icon: "world",
+              icon_color: palette.blue
+            },
+            {
+              name: "Claude",
+              url: "https://claude.ai/chats",
+              icon: "brain",
+              icon_color: palette.green
+            },
+            {
+              name: "ExHentai.org",
+              url: "https://exhentai.org/",
+              icon: "library-photo",
+              icon_color: palette.red
+            },
+            {
+              name: "Gravatar",
+              url: "https://en.gravatar.com/",
+              icon: "user-circle",
+              icon_color: palette.blue
+            },
+            {
+              name: "hanime.tv",
+              url: "https://hanime.tv/",
+              icon: "movie",
+              icon_color: palette.overlay2
+            },
+            {
+              name: "i2ocr",
+              url: "http://www.i2ocr.com/free-online-japanese-ocr",
+              icon: "text-recognition",
+              icon_color: palette.blue
+            },
+            {
+              name: "Japanese ASMR",
+              url: "https://japaneseasmr.com/",
+              icon: "ear",
+              icon_color: palette.text
+            },
+            {
+              name: "nhentai",
+              url: "https://nhentai.net/",
+              icon: "tags",
+              icon_color: palette.red
+            },
+            {
+              name: "pCloud",
+              url: "https://www.pcloud.com/",
+              icon: "cloud",
+              icon_color: palette.green
+            },
+            {
+              name: "Raindrop",
+              url: "https://app.raindrop.io/",
+              icon: "droplet",
+              icon_color: palette.blue
+            },
+            {
+              name: "Wikipedia",
+              url: "https://en.wikipedia.org/wiki/Main_Page",
+              icon: "book",
+              icon_color: palette.text
+            },
+            {
+              name: "Zorin OS",
+              url: "https://zorin.com/os/",
+              icon: "device-desktop",
+              icon_color: palette.blue
+            }
+          ]
+        },
+      ]
     }
   ]
 };
