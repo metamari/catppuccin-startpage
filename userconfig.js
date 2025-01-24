@@ -90,12 +90,6 @@ const default_config = {
               icon_color: palette.blue
             },
             {
-              name: "Imgur",
-              url: "https://imgur.com/",
-              icon: "camera-selfie",
-              icon_color: palette.green
-            },
-            {
               name: "Pixiv",
               url: "https://www.pixiv.net/",
               icon: "brush",
@@ -106,6 +100,12 @@ const default_config = {
               url: "https://www.fanbox.cc/",
               icon: "box",
               icon_color: palette.yellow
+            },
+            {
+              name: "Postimages",
+              url: "https://postimages.org/",
+              icon: "camera-selfie",
+              icon_color: palette.blue
             },
             {
               name: "Sakugabooru",
