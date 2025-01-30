@@ -244,3 +244,7 @@
 .ti-tags:before {
   content: "\ef86";
 }
+
+.ti-fish-hook:before {
+  content: "\f1f9";
+}

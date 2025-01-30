@@ -406,6 +406,12 @@ const default_config = {
               icon_color: palette.green
             },
             {
+              name: "DeepSeek",
+              url: "https://chat.deepseek.com/",
+              icon: "fish-hook",
+              icon_color: palette.blue
+            },
+            {
               name: "ExHentai.org",
               url: "https://exhentai.org/",
               icon: "library-photo",
