@@ -388,6 +388,12 @@ const default_config = {
               icon_color: palette.red
             },
             {
+              name: "AlternativeTo",
+              url: "https://alternativeto.net/",
+              icon: "switch-horizontal",
+              icon_color: palette.sky
+            },
+            {
               name: "ChatGPT",
               url: "https://chat.openai.com/",
               icon: "message",

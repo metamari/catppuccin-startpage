@@ -248,3 +248,7 @@
 .ti-fish-hook:before {
   content: "\f1f9";
 }
+
+.ti-switch-horizontal:before {
+  content: "\eb31";
+}
