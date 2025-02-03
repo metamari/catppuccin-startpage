@@ -171,7 +171,7 @@ const default_config = {
       ]
     },
     {
-      name: "d - s",
+      name: "d - r",
       background_url: "src/img/banners/bg-2.png",
       categories: [
         {
