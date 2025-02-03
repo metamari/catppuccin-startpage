@@ -178,25 +178,25 @@ const default_config = {
           name: "dictionaries",
           links: [
             {
-              name: "Cambridge Dictionary",
+              name: "Cambridge Dict.",
               url: "https://dictionary.cambridge.org/",
               icon: "book-2",
               icon_color: palette.peach
             },
             {
-              name: "Cube Pronunciation Dictionary",
-              url: "https://www.cubedictionary.org/",
+              name: "Cube Pron. Dict.",
+              url: "http://www.cubedictionary.org/",
               icon: "speakerphone",
               icon_color: palette.blue
             },
             {
-              name: "Diccionario de americanismos",
+              name: "DAMER",
               url: "https://www.asale.org/damer/",
               icon: "globe",
               icon_color: palette.maroon
             },
             {
-              name: "Diccionario panhispánico de dudas",
+              name: "DPD",
               url: "https://www.rae.es/dpd/",
               icon: "help-circle",
               icon_color: palette.text
@@ -208,13 +208,13 @@ const default_config = {
               icon_color: palette.blue
             },
             {
-              name: "Diccionario de la lengua española",
+              name: "DLE",
               url: "https://dle.rae.es/?w=diccionario",
               icon: "book",
               icon_color: palette.yellow
             },
             {
-              name: "Merriam-Webster Dictionary",
+              name: "Merriam-Webster Dict.",
               url: "https://www.merriam-webster.com/",
               icon: "vocabulary",
               icon_color: palette.text
@@ -224,6 +224,41 @@ const default_config = {
               url: "https://www.wordnik.com/",
               icon: "align-left",
               icon_color: palette.peach
+            }
+          ]
+        },
+        {
+          name: "language tools",
+          links: [
+            {
+              name: "DeepL Translate",
+              url: "https://www.deepl.com/translator",
+              icon: "arrows-exchange",
+              icon_color: palette.overlay2
+            },
+            {
+              name: "Google Translate",
+              url: "https://translate.google.com/",
+              icon: "language",
+              icon_color: palette.blue
+            },
+            {
+              name: "ichi.moe",
+              url: "https://ichi.moe/",
+              icon: "language-hiragana",
+              icon_color: palette.pink
+            },
+            {
+              name: "jisho.org",
+              url: "https://jisho.org/",
+              icon: "language-katakana",
+              icon_color: palette.green
+            },
+            {
+              name: "Lingva Translate",
+              url: "https://lingva.ml/",
+              icon: "message-language",
+              icon_color: palette.green
             }
           ]
         },
@@ -262,6 +297,13 @@ const default_config = {
             }
           ]
         },
+        
+      ]
+    },
+    {
+      name: "s - z",
+      background_url: "src/img/banners/bg-3.png",
+      categories: [
         {
           name: "social media",
           links: [
@@ -276,35 +318,6 @@ const default_config = {
               url: "https://x.com/",
               icon: "feather",
               icon_color: palette.sky
-            }
-          ]
-        }
-      ]
-    },
-    {
-      name: "s - z",
-      background_url: "src/img/banners/bg-3.png",
-      categories: [
-        {
-          name: "translators",
-          links: [
-            {
-              name: "DeepL Translate",
-              url: "https://www.deepl.com/translator",
-              icon: "language-hiragana",
-              icon_color: palette.overlay2
-            },
-            {
-              name: "Google Translate",
-              url: "https://translate.google.com/",
-              icon: "language-katakana",
-              icon_color: palette.blue
-            },
-            {
-              name: "Lingva Translate",
-              url: "https://lingva.ml/",
-              icon: "language",
-              icon_color: palette.green
             }
           ]
         },
@@ -358,6 +371,12 @@ const default_config = {
         {
           name: "video/streaming",
           links: [
+            {
+              name: "Holodex",
+              url: "https://holodex.net/",
+              icon: "player-record",
+              icon_color: palette.blue
+            },
             {
               name: "Twitch",
               url: "https://www.twitch.tv/",

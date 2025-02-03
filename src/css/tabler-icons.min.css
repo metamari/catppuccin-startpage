@@ -252,3 +252,15 @@
 .ti-switch-horizontal:before {
   content: "\eb31";
 }
+
+.ti-arrows-exchange:before {
+  content: "\f1f4";
+}
+
+.ti-message-language:before {
+  content: "\efae";
+}
+
+.ti-player-record:before {
+  content: "\ed47";
+}
