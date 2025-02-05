@@ -58,7 +58,7 @@
 }
 
 .ti-clipboard-list:before {
-  content: "\ea6d"
+  content: "\ea6d";
 }
 
 .ti-code:before {
@@ -70,7 +70,7 @@
 }
 
 .ti-database:before {
-  content: "\ea88"
+  content: "\ea88";
 }
 
 .ti-device-computer-camera:before {
@@ -118,15 +118,15 @@
 }
 
 .ti-language:before {
-  content: "\ebbe"
+  content: "\ebbe";
 }
 
 .ti-language-hiragana:before {
-  content: "\ef77"
+  content: "\ef77";
 }
 
 .ti-language-katakana:before {
-  content: "\ef78"
+  content: "\ef78";
 }
 
 .ti-list:before {
@@ -190,7 +190,7 @@
 }
 
 .ti-steam:before {
-  content: "\f24b"
+  content: "\f24b";
 }
 
 .ti-terminal:before {
@@ -263,4 +263,32 @@
 
 .ti-player-record:before {
   content: "\ed47";
+}
+
+.ti-news:before {
+  content: "\eafd";
+}
+
+.ti-lock:before {
+  content: "\eae2";
+}
+
+.ti-shield:before {
+  content: "\eb24";
+}
+
+.ti-leaf:before {
+  content: "\ed4f";
+}
+
+.ti-article:before {
+  content: "\f1e2";
+}
+
+.ti-heart-handshake:before {
+  content: "\f0f3";
+}
+
+.ti-dog:before {
+  content: "\f660";
 }
