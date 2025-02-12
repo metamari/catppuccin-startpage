@@ -25,12 +25,6 @@ const default_config = {
           name: "1. anime",
           links: [
             {
-              name: "AMQ",
-              url: "https://animemusicquiz.com/",
-              icon: "music-question",
-              icon_color: palette.red,
-            },
-            {
               name: "AniChart",
               url: "https://anichart.net/",
               icon: "calendar-event",
@@ -52,6 +46,12 @@ const default_config = {
               name: "AnimeBytes",
               url: "https://animebytes.tv/",
               icon: "progress",
+              icon_color: palette.red,
+            },
+            {
+              name: "AnimeMusicQuiz",
+              url: "https://animemusicquiz.com/",
+              icon: "music-question",
               icon_color: palette.red,
             },
             {
@@ -161,6 +161,12 @@ const default_config = {
               icon_color: palette.sky,
             },
             {
+              name: "Postman",
+              url: "https://web.postman.co/home",
+              icon: "api",
+              icon_color: palette.peach,
+            },
+            {
               name: "Spring Initializr",
               url: "https://start.spring.io/",
               icon: "code-plus",
@@ -231,6 +237,12 @@ const default_config = {
               icon_color: palette.green,
             },
             {
+              name: "Bandcamp",
+              url: "https://bandcamp.com/",
+              icon: "album",
+              icon_color: palette.teal,
+            },
+            {
               name: "JPopsuki",
               url: "https://jpopsuki.eu/index.php",
               icon: "music-down",
@@ -241,6 +253,12 @@ const default_config = {
               url: "https://www.last.fm/",
               icon: "radio",
               icon_color: palette.red,
+            },
+            {
+              name: "SoundCloud",
+              url: "https://soundcloud.com/",
+              icon: "wave-saw-tool",
+              icon_color: palette.blue,
             },
             {
               name: "Spotify",
@@ -258,6 +276,12 @@ const default_config = {
               url: "https://app.addy.io/",
               icon: "lock",
               icon_color: palette.sky,
+            },
+            {
+              name: "Banco Unión",
+              url: "https://bancounion.com.bo/",
+              icon: "credit-card",
+              icon_color: palette.blue,
             },
             {
               name: "Bitwarden",
@@ -419,6 +443,18 @@ const default_config = {
               icon_color: palette.blue,
             },
             {
+              name: "spoo.me",
+              url: "https://spoo.me/",
+              icon: "link",
+              icon_color: palette.blue,
+            },
+            {
+              name: "Surfshark",
+              url: "https://my.surfshark.com/home/dashboard",
+              icon: "shield-lock",
+              icon_color: palette.green,
+            },
+            {
               name: "LibreWolf",
               url: "https://librewolf.net/",
               icon: "dog",
@@ -448,6 +484,12 @@ const default_config = {
               icon_color: palette.overlay2,
             },
             {
+              name: "Epic Games Store",
+              url: "https://www.epicgames.com/store/en-US/",
+              icon: "swords",
+              icon_color: palette.overlay2,
+            },
+            {
               name: "GOG",
               url: "https://www.gog.com/",
               icon: "disc",
@@ -462,7 +504,7 @@ const default_config = {
             {
               name: "itch.io",
               url: "https://itch.io/",
-              icon: "file",
+              icon: "building-store",
               icon_color: palette.maroon,
             },
             {

@@ -292,3 +292,35 @@
 .ti-dog:before {
   content: "\f660";
 }
+
+.ti-api:before {
+  content: "\effd";
+}
+
+.ti-album:before {
+  content: "\f022";
+}
+
+.ti-wave-saw-tool:before {
+  content: "\ecd3";
+}
+
+.ti-credit-card:before {
+  content: "\ea84";
+}
+
+.ti-link:before {
+  content: "\eade";
+}
+
+.ti-shield-lock:before {
+  content: "\ed58";
+}
+
+.ti-swords:before {
+  content: "\f132";
+}
+
+.ti-building-store:before {
+  content: "\ea4e";
+}
