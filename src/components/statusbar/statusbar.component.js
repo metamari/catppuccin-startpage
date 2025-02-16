@@ -213,9 +213,10 @@ class Statusbar extends Component {
     this.refs.fastlink.onclick = () => {
       console.log(CONFIG.fastlink);
       if (CONFIG.config.fastlink) {
-        window.location.href = CONFIG.config.fastlink;
+        window.open(CONFIG.config.fastlink, "_blank");
       }
     };
+    
 
     if (CONFIG.openLastVisitedTab) {
       window.onbeforeunload = () => this.saveCurrentTab();

@@ -97,10 +97,10 @@ class Tabs extends Component {
           border-radius: 5px 0 0 5px;
           width: 90%;
           max-width: 1200px;
-          height: 450px;
+          height: 480px;
           right: 0;
           left: 0;
-          top: 0;
+          top: -6%;
           bottom: 0;
           margin: auto;
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
