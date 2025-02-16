@@ -14,8 +14,8 @@ const default_config = {
   },
   timeZone: "America/La_Paz",
   disabled: [],
-  fastlink: "https://app.raindrop.io",
-  openLastVisitedTab: true,
+  fastlink: "https://catppuccin.com/",
+  openLastVisitedTab: false,
   tabs: [
     {
       name: "1 - 3",
