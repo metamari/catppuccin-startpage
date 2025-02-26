@@ -296,10 +296,10 @@ const default_config = {
               icon_color: palette.blue,
             },
             {
-              name: "pCloud",
-              url: "https://www.pcloud.com/",
+              name: "Icedrive",
+              url: "https://icedrive.net/dashboard/",
               icon: "cloud",
-              icon_color: palette.green,
+              icon_color: palette.blue,
             },
             {
               name: "Raindrop",
