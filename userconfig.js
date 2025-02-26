@@ -155,6 +155,12 @@ const default_config = {
               icon_color: palette.peach,
             },
             {
+              name: "Google Classroom",
+              url: "https://classroom.google.com/",
+              icon: "chalkboard",
+              icon_color: palette.green,
+            },
+            {
               name: "Kaggle",
               url: "https://www.kaggle.com/",
               icon: "chart-line",

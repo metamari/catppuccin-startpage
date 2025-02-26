@@ -324,3 +324,7 @@
 .ti-building-store:before {
   content: "\ea4e";
 }
+
+.ti-chalkboard:before {
+  content: "\f34d";
+}
