@@ -319,6 +319,12 @@ const default_config = {
           name: "7. reference",
           links: [
             {
+              name: "Bandori Party",
+              url: "https://bandori.party/",
+              icon: "piano",
+              icon_color: palette.pink,
+            },
+            {
               name: "Bulbapedia",
               url: "https://bulbapedia.bulbagarden.net/wiki/Main_Page",
               icon: "leaf",
@@ -329,12 +335,6 @@ const default_config = {
               url: "https://dictionary.cambridge.org/",
               icon: "book-2",
               icon_color: palette.peach,
-            },
-            {
-              name: "Cube Pron. Dict.",
-              url: "http://www.cubedictionary.org/",
-              icon: "speakerphone",
-              icon_color: palette.blue,
             },
             {
               name: "DAMER",
@@ -365,6 +365,12 @@ const default_config = {
               url: "https://www.merriam-webster.com/",
               icon: "vocabulary",
               icon_color: palette.red,
+            },
+            {
+              name: "Sekaipedia",
+              url: "https://www.sekaipedia.org/wiki/Main_Page",
+              icon: "music",
+              icon_color: palette.sky,
             },
             {
               name: "Wikipedia",
@@ -465,6 +471,12 @@ const default_config = {
               url: "https://librewolf.net/",
               icon: "dog",
               icon_color: palette.sky,
+            },
+            {
+              name: "Mullvad",
+              url: "https://mullvad.net/",
+              icon: "eye-off",
+              icon_color: palette.yellow,
             },
             {
               name: "Zorin OS",

@@ -185,10 +185,6 @@
   content: "\ecf7";
 }
 
-.ti-speakerphone:before {
-  content: "\ed61";
-}
-
 .ti-steam:before {
   content: "\f24b";
 }
@@ -327,4 +323,16 @@
 
 .ti-chalkboard:before {
   content: "\f34d";
+}
+
+.ti-piano:before {
+  content: "\fad3";
+}
+
+.ti-music:before {
+  content: "\eafc";
+}
+
+.ti-eye-off:before {
+  content: "\ecf0";
 }
