@@ -88,7 +88,7 @@ class Tabs extends Component {
       #panels .links {
           position: absolute;
       }
-
+          
       .nav {
           color: #fff;
       }
@@ -97,7 +97,7 @@ class Tabs extends Component {
           border-radius: 5px 0 0 5px;
           width: 90%;
           max-width: 1200px;
-          height: 480px;
+          height: 500px;
           right: 0;
           left: 0;
           top: -6%;
@@ -165,7 +165,7 @@ class Tabs extends Component {
           width: 70%;
           height: 100%;
           background: ${CONFIG.palette.base};
-          padding: 1.5%;
+          padding: 1%;
           flex-wrap: wrap;
       }
 
