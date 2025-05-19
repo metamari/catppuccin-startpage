@@ -261,6 +261,18 @@ const default_config = {
               icon_color: palette.red,
             },
             {
+              name: "ListenBrainz",
+              url: "https://listenbrainz.org/",
+              icon: "device-audio-tape",
+              icon_color: palette.blue,
+            },
+            {
+              name: "MusicBrainz",
+              url: "https://musicbrainz.org/",
+              icon: "music-search",
+              icon_color: palette.mauve,
+            },
+            {
               name: "SoundCloud",
               url: "https://soundcloud.com/",
               icon: "wave-saw-tool",
@@ -584,10 +596,10 @@ const default_config = {
               icon_color: palette.maroon,
             },
             {
-              name: "hanime.tv",
-              url: "https://hanime.tv/",
-              icon: "movie",
-              icon_color: palette.overlay2,
+              name: "hstream.moe",
+              url: "https://hstream.moe/",
+              icon: "rating-18-plus",
+              icon_color: palette.pink,
             },
             {
               name: "Japanese ASMR",

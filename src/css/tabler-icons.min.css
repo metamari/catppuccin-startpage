@@ -336,3 +336,15 @@
 .ti-eye-off:before {
   content: "\ecf0";
 }
+
+.ti-device-audio-tape:before {
+  content: "\ee73";
+}
+
+.ti-music-search:before {
+  content: "\fbe4";
+}
+
+.ti-rating-18-plus:before {
+  content: "\f269";
+}
