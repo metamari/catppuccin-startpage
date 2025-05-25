@@ -89,6 +89,7 @@ class Weather extends Component {
       }
 
       .weather-condition-icon {
+          font-family: "Material Icons";
           font-size: 14pt;
           line-height: 0;
       }

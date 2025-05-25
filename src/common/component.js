@@ -4,14 +4,8 @@ class Component extends HTMLElement {
   refs = {};
 
   resources = {
-    fonts: {
-      roboto: '<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">',
-      nunito: '<link href="https://fonts.googleapis.com/css?family=Nunito:200" rel="stylesheet">',
-      raleway: '<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">',
-    },
+    fonts: {},
     icons: {
-      material:
-        '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">',
       cryptofont: '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monzanifabio/cryptofont/cryptofont.css">',
       tabler: '<link rel="stylesheet" href="src/css/tabler-icons.min.css">',
     },

@@ -6,9 +6,9 @@ class Clock extends Component {
 
   constructor() {
     super();
-    console.log("CONFIG in Clock constructor:", CONFIG);  // Log CONFIG here to check if timeZone is present
+    console.log("CONFIG in Clock constructor:", CONFIG); // Log CONFIG here to check if timeZone is present
     this.timeZone = CONFIG.timeZone || "UTC"; // Default to UTC if CONFIG.timeZone is not set
-    console.log("Time zone from CONFIG:", this.timeZone);  // Log the time zone specifically
+    console.log("Time zone from CONFIG:", this.timeZone); // Log the time zone specifically
   }
 
   imports() {
@@ -25,6 +25,7 @@ class Clock extends Component {
       }
 
       .clock-icon {
+        font-family: "Material Icons";
         font-size: 10pt;
         margin-right: 10px;
       }
@@ -46,7 +47,6 @@ class Clock extends Component {
     const date = new Date();
     this.refs.clock = strftime(date, CONFIG.clock.format, this.timeZone); // Use the standalone strftime function
   }
-  
 
   connectedCallback() {
     this.render().then(() => {

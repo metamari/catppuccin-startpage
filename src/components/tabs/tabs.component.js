@@ -26,7 +26,7 @@ class Links extends Component {
                       ${Links.getIcon(link)}
                       ${link.name ? `<p class="link-name">${link.name}</p>` : ""}
                     </a>
-                </div>`,
+                </div>`
                 )
                 .join("")}
             </div>
@@ -65,13 +65,7 @@ class Tabs extends Component {
   }
 
   imports() {
-    return [
-      this.resources.icons.material,
-      this.resources.icons.tabler,
-      this.resources.fonts.roboto,
-      this.resources.fonts.raleway,
-      this.resources.libs.awoo,
-    ];
+    return [this.resources.icons.tabler, this.resources.libs.awoo];
   }
 
   style() {
@@ -88,7 +82,7 @@ class Tabs extends Component {
       #panels .links {
           position: absolute;
       }
-          
+
       .nav {
           color: #fff;
       }
@@ -221,7 +215,7 @@ class Tabs extends Component {
           text-align: center;
           flex-wrap: wrap;
           word-break: break-all;
-          align-items: center;          
+          align-items: center;
           backdrop-filter: blur(1px);
       }
 
